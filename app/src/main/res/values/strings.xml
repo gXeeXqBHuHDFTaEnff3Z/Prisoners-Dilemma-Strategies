@@ -1,6 +1,17 @@
 <resources>
     <string name="app_name">Prisoners Dilemma Strategies</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_home">Strategies</string>
+    <string name="title_dashboard">Results</string>
+    <string name="title_notifications">Info</string>
+    <string name="strategy">strategy</string>
+    <string name="strategies">strategies</string>
+    <string name="explanation">explanation</string>
+    <string name="learn_more">Learn \nmore</string>
+    <string name="strategy_nice">Nice</string>
+    <string name="strategy_nice_explanation">Always cooperate.</string>
+    <string name="strategy_random">Random</string>
+    <string name="strategy_random_explanation">Randomly cooperate or defect.</string>
+    <string name="strategy_revenge">Revenge</string>
+    <string name="strategy_revenge_explanation">Cooperate until you see your partner defect. Once he defects, always defect against him.</string>
+    <string name="menu_start_tournament">Start prisoners tournament</string>
 </resources>

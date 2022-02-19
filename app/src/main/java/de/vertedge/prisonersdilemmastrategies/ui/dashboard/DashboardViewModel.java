@@ -4,16 +4,24 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
+import java.util.List;
+
+import de.vertedge.prisonersdilemmastrategies.model.Tournament;
+
 public class DashboardViewModel extends ViewModel {
 
-    private final MutableLiveData<String> mText;
+    private MutableLiveData<List<Tournament.ResultsPairing>> mResults;
 
     public DashboardViewModel() {
-        mText = new MutableLiveData<>();
-        mText.setValue("This is dashboard fragment");
+        this.mResults = null;
     }
 
-    public LiveData<String> getText() {
-        return mText;
+    public void setResults(List<Tournament.ResultsPairing> results) {
+        this.mResults = new MutableLiveData<>();
+        mResults.setValue(results);
+    }
+
+    public LiveData<List<Tournament.ResultsPairing>> getResults() {
+        return mResults;
     }
 }
